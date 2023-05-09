@@ -6,10 +6,4 @@
     <targets>
         <target>lightning__AppPage</target>
     </targets>
-    <targetConfigs>
-        <targetConfig targets="lightning__AppPage">
-            <property name="objectName" type="String" default="Account" label="SObject Name" description="Type api Name of Sobject to display"/>
-            <property name="objectFields" type="String" default="Id, Name" label="SObject Fields" description="Type api Name of Sobject fields to display, separated it by coma"/>
-        </targetConfig>
-    </targetConfigs>
 </LightningComponentBundle>

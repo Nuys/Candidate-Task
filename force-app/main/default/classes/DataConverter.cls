@@ -37,7 +37,6 @@ public with sharing class DataConverter {
             }
 
             if(!sObjectsToInsert.isEmpty()){
-                System.debug('sObjectsToInsert==> ' + sObjectsToInsert);
                 insert sObjectsToInsert;
                 response = new ResponseBuilder(true, System.Label.Records_Created_Successfully_Label);
             }

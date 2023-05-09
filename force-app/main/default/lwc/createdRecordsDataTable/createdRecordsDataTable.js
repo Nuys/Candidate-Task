@@ -9,7 +9,7 @@ export default class CreatedRecordsDataTable extends LightningElement {
     @track sObjectData = [];
     @track columns = [];
     @track lastSelectedObject = '';
-
+    @track dataRecieved = false;
     labels = {
         View_Label,
     };
@@ -24,11 +24,13 @@ export default class CreatedRecordsDataTable extends LightningElement {
         }
     }
 
-    getSobjectData(sobjectApiName){
+    @api getSobjectData(sobjectApiName){
+        this.dataRecieved = false;
         getSObjectData({ sObjectApiName: sobjectApiName, objectFields: this.objectFields })
         .then(response => {
             this.sObjectData = response.responseData.data;
             this.columns = response.responseData.columns;
+            this.dataRecieved = true;
         })
         .catch(error => {
             console.error(error);

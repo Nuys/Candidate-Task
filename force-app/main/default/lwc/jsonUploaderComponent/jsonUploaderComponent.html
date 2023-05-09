@@ -14,6 +14,8 @@
         <div class="json-load-button-container" if:false={isValidJSON}>
             <lightning-button variant="brand" label={proccessLabel} title="Primary action" disabled class="slds-m-left_x-small"></lightning-button>
         </div>
-        <c-created-records-data-table></c-created-records-data-table>
+        <div class="data-table-container" if:true={isDataExist}>
+            <c-created-records-data-table object-name={objectName} object-fields={objectFields}></c-created-records-data-table>
+        </div>
     </div>
 </template>

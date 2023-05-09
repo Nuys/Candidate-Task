@@ -1,5 +1,5 @@
 <template>
-    <div class="data-table-main-cointainer">
+    <div class="data-table-main-cointainer" if:true={dataRecieved}>
         <lightning-card title={dataTableTitle}>
             <template if:true={sObjectData}>
                 <lightning-datatable 
