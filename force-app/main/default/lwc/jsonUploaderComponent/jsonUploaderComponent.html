@@ -1,0 +1,19 @@
+<template>
+    <div class="json-uploader-main-container">
+        <div class="json-uploader-container">
+            <lightning-file-upload
+            label={uploadLabel}
+            name="jsonFileUploader"
+            accept={acceptedFormats}
+            onuploadfinished={handleUploadFinished}>
+            </lightning-file-upload>
+        </div>
+        <div class="json-load-button-container" if:true={isValidJSON}>
+            <lightning-button variant="brand" label={proccessLabel} title="Primary action" onclick={createRecordsByJSON} class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <div class="json-load-button-container" if:false={isValidJSON}>
+            <lightning-button variant="brand" label={proccessLabel} title="Primary action" disabled class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <c-created-records-data-table></c-created-records-data-table>
+    </div>
+</template>

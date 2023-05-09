@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>View_Label</fullName>
+        <categories>data-table</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>View_Label</shortDescription>
+        <value>View {0} Data</value>
+    </labels>
+    <labels>
+        <fullName>Upload_JSON_File_Label</fullName>
+        <categories>loader</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Upload_JSON_File_Label</shortDescription>
+        <value>Upload JSON File</value>
+    </labels>
+    <labels>
+        <fullName>Process_Label</fullName>
+        <categories>loader</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Process_Label</shortDescription>
+        <value>Process</value>
+    </labels>
+    <labels>
+        <fullName>Attach_correct_file_Label</fullName>
+        <categories>loader</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Attach_correct_file_Label</shortDescription>
+        <value>Please attach the correct file.</value>
+    </labels>
+    <labels>
+        <fullName>Records_Created_Successfully_Label</fullName>
+        <categories>loader</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Records_Created_Successfully_Label</shortDescription>
+        <value>Records Created Successfully</value>
+    </labels>
+    <labels>
+        <fullName>Convertion_Error_Label</fullName>
+        <categories>loader</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Convertion_Error_Label</shortDescription>
+        <value>Class for convertion is not found</value>
+    </labels>
+</CustomLabels>

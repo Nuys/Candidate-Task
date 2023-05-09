@@ -1,0 +1,14 @@
+<template>
+    <div class="data-table-main-cointainer">
+        <lightning-card title={dataTableTitle}>
+            <template if:true={sObjectData}>
+                <lightning-datatable 
+                    data={sObjectData}
+                    columns={columns}
+                    key-field="Id"
+                    hide-checkbox-column="true">
+                </lightning-datatable>
+            </template>
+        </lightning-card>
+    </div>
+</template>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Records Data Table</masterLabel>
+    <targets>
+        <target>lightning__AppPage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__AppPage">
+            <property name="objectName" type="String" default="Account" label="SObject Name" description="Type api Name of Sobject to display"/>
+            <property name="objectFields" type="String" default="Id, Name" label="SObject Fields" description="Type api Name of Sobject fields to display, separated it by coma"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

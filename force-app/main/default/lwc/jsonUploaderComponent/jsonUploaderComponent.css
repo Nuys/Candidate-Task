@@ -1,0 +1,15 @@
+.json-uploader-main-container{
+    background-color: #f3f3f3;
+    padding: 20px 20px 20px 0px;
+    border-radius: 6px;
+}
+
+.json-load-button-container{
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+
+.json-uploader-container{
+    padding-left: 20px;
+}
