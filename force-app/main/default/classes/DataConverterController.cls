@@ -16,8 +16,8 @@ public with sharing class DataConverterController {
     * @author Evgeniy Dobritsa
     * @date 2023/05/08
     * @param cdId - id of downloaded file
-    * @description Method to create records from JSON string and accept it from Lightning component
-    * @return Response - response object with status and message
+    * @description Method to getted saved ContentVersion via upload file 
+    * @return Response - response object with status and Json file
     */
     @AuraEnabled
     public static ResponseBuilder getContentDocBodyById(String cdId) {
